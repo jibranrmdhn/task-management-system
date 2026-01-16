@@ -7,6 +7,19 @@
  * - User-specific operations
  * - Statistics dan reporting
  */
+/**
+ * Repository Pattern untuk Task dengan fitur:
+ * - CRUD operations
+ * - Query methods (filter, search, sort)
+ * - User-specific operations
+ * - Statistics dan reporting
+ */
+
+if (typeof require !== 'undefined' && typeof module !== 'undefined') {
+    if (typeof EnhancedTask === 'undefined') {
+        EnhancedTask = require('../models/EnhancedTask');
+    }
+}
 class TaskRepository {
     constructor(storageManager) {
         this.storage = storageManager;
